@@ -3,15 +3,15 @@
 hrs = input("Enter hours: ")
 rate = input("Enter rate per hour: ")
 try:
-  float = int(hrs)
-  float = int(rate)
+  Working = float(hrs)
+  PPW = float(rate)
 except:
   print("Enter in numeric form :(")
   quit()
-if hrs > 40:
-  bonusrate = rate * 1.5
-  bonuspay = (hrs - 40) * bonusrate
-  pay = ((hrs - (hrs - 40)) * rate) + bonuspay
+if Working > 40:
+  bonusrate = PPW * 1.5
+  bonuspay = (Working - 40) * bonusrate
+  pay = ((Working - (Working - 40)) * PPW) + bonuspay
 else:
-  pay = hrs * rate
+  pay = Working * PPW
 print("Your pay is: $", pay)
