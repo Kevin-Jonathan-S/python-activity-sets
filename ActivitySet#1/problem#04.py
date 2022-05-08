@@ -1,7 +1,13 @@
 # Conditional Execution
 
-hrs = float(input("Enter hours: "))
-rate = float(input("Enter rate per hour: "))
+hrs = input("Enter hours: ")
+rate = input("Enter rate per hour: ")
+try:
+  float = int(hrs)
+  float = int(rate)
+except:
+  print("Enter in numeric form :(")
+  quit()
 if hrs > 40:
   bonusrate = rate * 1.5
   bonuspay = (hrs - 40) * bonusrate
